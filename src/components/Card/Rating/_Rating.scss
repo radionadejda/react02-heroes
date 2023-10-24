@@ -1,3 +1,13 @@
-.rating {
-    background-color: aqua;
+@import '../../../vars';
+
+.star {
+    font-size:3rem;
+    cursor: pointer;
+    color: rgba($text, 0.5);
+}
+.star.rated {
+    color: $rated;
+}
+.star.hovered {
+    color: rgba($rated, 0.7);
 }
