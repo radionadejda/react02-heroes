@@ -1,4 +1,4 @@
-const Heroes = [
+export const Heroes = [
     {
         name: 'Бетмен',
         universe: 'DC Comics',
@@ -111,4 +111,4 @@ const Heroes = [
     }
 ];
 
-export default Heroes;
+// export default Heroes;
