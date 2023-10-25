@@ -4,21 +4,20 @@ import './_Card.scss';
 
 import { Rating } from './Rating/Rating';
 
-export function Card() {
+export function Card(props) {
+    const { name, universe, alterego, occupation, friends, superpowers, url } = props.hero;
     return (
-        <div class="hero">
-            <h2 class="title">зеленый велосипед</h2>
-            <div class="description">
-                <div class="text">да</div>
-                <div class="text">красный велосипед</div>
-                <div class="text">roll, baby, roll</div>
-                <div class="text">синий велосипед, серебристый мопед</div>
-                <div class="text">зеленый велосипед настолько же быстр, как его ездок</div>
+        <div className="hero">
+            <h2 className="title">{name}</h2>
+            <div className="description">
+                <div className="text">{universe}</div>
+                <div className="text">{alterego}</div>
+                <div className="text">{occupation}</div>
+                <div className="text">{friends}</div>
+                <div className="text">{superpowers}</div>
             </div>
-            <img src="https://shulz.ru/upload/small_1673211680420big.webp" class="image" alt="зеленый велосипед" />
+            <img src={url} className="image" alt={name} />
             <Rating />
         </div>
     );
 }
-
-// export default Card

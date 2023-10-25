@@ -1,4 +1,4 @@
-export const Heroes = [
+export const heroes = [
     {
         name: 'Бетмен',
         universe: 'DC Comics',
