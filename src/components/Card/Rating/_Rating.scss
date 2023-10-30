@@ -1,7 +1,7 @@
 @import '../../../vars';
 
 .star {
-    font-size:3rem;
+    font-size:400%;
     cursor: pointer;
     color: rgba($text, 0.5);
 }
@@ -11,3 +11,4 @@
 .star.hovered {
     color: rgba($rated, 0.7);
 }
+

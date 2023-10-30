@@ -1,13 +1,17 @@
 // import { Heroes } from "../Data/Data";
 import './_Card.scss';
 
+import React, { useState } from 'react';
+import ReactCardFlip from 'react-card-flip';
+
 import { Rating } from './Rating/Rating';
 
 export function Card(props) {
 	const { name, universe, alterego, occupation, friends, superpowers, url, info } = props.hero;
+	const [flip, setFlip] = useState(false);
 	return (
-		<div className="card">
-			<div className="hero">
+		<ReactCardFlip isFlipped={flip} flipDirection="horizontal">
+			<div className="card" onClick={() => setFlip(!flip)}>
 				<h2 className="title">{name}</h2>
 				<div className="description">
 					<div className="text">{universe}</div>
@@ -19,9 +23,9 @@ export function Card(props) {
 				<img src={url} className="image" alt={name} />
 				<Rating />
 			</div>
-			<div className="cardBack">
+			<div className="card" onClick={() => setFlip(!flip)}>
 				<div className="text">{info}</div>
 			</div>
-		</div>
+		</ReactCardFlip>
 	);
 }
