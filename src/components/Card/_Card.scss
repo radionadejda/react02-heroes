@@ -2,9 +2,10 @@
 
 .card {
 	border: 2px solid transparent;
-	width: 90%;
-	height: 100%;
-	padding: 0 1vw 1vh 1vw;
+	width: 100%;
+	height: 60vh;
+	min-height: fit-content;
+	padding: 1vh 1vw;
 	border-radius: 2rem;
 	background: linear-gradient($bg, $bg) padding-box, linear-gradient(to right, $accent1, $accent2) border-box;
 	cursor: pointer;
@@ -12,12 +13,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: $font;
-	font-size: 100%;
-	@media screen and (max-width: 650px) {
-		height: 40vh;
-		margin: 1vh auto;
-	}
+	font-size: 70%;
 }
 
 .image {
@@ -25,10 +21,4 @@
 	width: 80%;
 	border-radius: 1rem;
 	flex-shrink: 0;
-}
-.description {
-	height: 40%;
-}
-.text {
-	width: 100%;
 }

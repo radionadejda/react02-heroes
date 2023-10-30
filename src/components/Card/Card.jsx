@@ -14,16 +14,16 @@ export function Card(props) {
 			<div className="card" onClick={() => setFlip(!flip)}>
 				<h2 className="title">{name}</h2>
 				<div className="description">
-					<div className="text">{universe}</div>
-					<div className="text">{alterego}</div>
-					<div className="text">{occupation}</div>
-					<div className="text">{friends}</div>
-					<div className="text">{superpowers}</div>
+					<div className="text">вселенная: {universe}</div>
+					<div className="text">альтер-эго: {alterego}</div>
+					<div className="text">занятия: {occupation}</div>
+					<div className="text">друзья: {friends}</div>
+					<div className="text">суперсилы: {superpowers}</div>
 				</div>
 				<img src={url} className="image" alt={name} />
 				<Rating />
 			</div>
-			<div className="card" onClick={() => setFlip(!flip)}>
+			<div className={'card cardBack'} onClick={() => setFlip(!flip)}>
 				<div className="text">{info}</div>
 			</div>
 		</ReactCardFlip>

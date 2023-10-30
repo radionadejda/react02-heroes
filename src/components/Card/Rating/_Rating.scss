@@ -1,14 +1,13 @@
 @import '../../../vars';
 
 .star {
-    font-size:400%;
-    cursor: pointer;
-    color: rgba($text, 0.5);
+	cursor: pointer;
+	color: rgba($text, 0.5);
+	font-size: 300%;
 }
 .star.rated {
-    color: $rated;
+	color: $rated;
 }
 .star.hovered {
-    color: rgba($rated, 0.7);
+	color: rgba($rated, 0.7);
 }
-
