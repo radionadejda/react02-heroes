@@ -1,35 +1,34 @@
 @import '../../vars';
 
 .card {
-    border: 2px solid transparent;
-    width: 90%;
-    height: 100%;
-    padding: 0 1vw 1vh 1vw;
-    border-radius: 2rem;
-    background: linear-gradient($bg, $bg) padding-box,
-    linear-gradient(to right, $accent1, $accent2) border-box;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: $font;
-    font-size: 100%;
-    @media screen and (max-width: 650px) {
-        height: 40vh;
-        margin: 1vh auto;
-      }
+	border: 2px solid transparent;
+	width: 90%;
+	height: 100%;
+	padding: 0 1vw 1vh 1vw;
+	border-radius: 2rem;
+	background: linear-gradient($bg, $bg) padding-box, linear-gradient(to right, $accent1, $accent2) border-box;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: $font;
+	font-size: 100%;
+	@media screen and (max-width: 650px) {
+		height: 40vh;
+		margin: 1vh auto;
+	}
 }
 
 .image {
-    margin: 2vw auto 0 auto;
-    width: 80%;
-    border-radius: 1rem;
-    flex-shrink: 0;
+	margin: 2vw auto 0 auto;
+	width: 80%;
+	border-radius: 1rem;
+	flex-shrink: 0;
 }
 .description {
-    height: 40%;
+	height: 40%;
 }
 .text {
-    width: 100%;
+	width: 100%;
 }
