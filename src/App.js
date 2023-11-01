@@ -1,5 +1,4 @@
 import './_App.scss';
-import './components/Card/_Card.scss';
 import { heroes } from './components/Data/Data.js';
 import { Card } from './components/Card/Card.jsx';
 
