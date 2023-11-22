@@ -1,4 +1,3 @@
-// import { Heroes } from "../Data/Data";
 import './_Card.scss';
 
 import React, { useState } from 'react';
