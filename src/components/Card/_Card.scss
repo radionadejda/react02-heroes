@@ -1,25 +1,30 @@
 @import '../../vars';
 
 .card {
-	border: 2px solid transparent;
-	width: 100%;
-	height: 60vh;
-	min-height: fit-content;
-	padding: 1vh 1vw;
-	border-radius: 2rem;
-	background: linear-gradient($bg, $bg) padding-box, linear-gradient(to right, $accent1, $accent2) border-box;
-	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 70%;
-	margin: 0 auto;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 60vh;
+    min-height: fit-content;
+    padding: 1vh 1vw;
+    border-radius: 2rem;
+    background: linear-gradient($bg, $bg) padding-box, linear-gradient(to right, $accent1, $accent2) border-box;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+    margin: 0 auto;
+
+    &:hover {
+        background: rgba($accent2, 0.2);
+        transition: all 1s ease-out;
+    }
 }
 
 .image {
-	margin: 2vw auto 0 auto;
-	width: 80%;
-	border-radius: 1rem;
-	flex-shrink: 0;
+    margin: 2vw auto 0 auto;
+    width: 80%;
+    border-radius: 1rem;
+    flex-shrink: 0;
 }

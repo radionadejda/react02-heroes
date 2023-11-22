@@ -4,7 +4,7 @@ import './_Card.scss';
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 
-import { Rating } from './Rating/Rating';
+import { Rating } from '../Rating/Rating';
 
 export function Card(props) {
     const { name, universe, alterego, occupation, friends, superpowers, url, info } = props.hero;

@@ -1,5 +1,5 @@
 import './_App.scss';
-import { heroes } from './components/Data/Data.js';
+import heroes from './components/Data/data.json';
 import { Card } from './components/Card/Card.jsx';
 
 function App() {
