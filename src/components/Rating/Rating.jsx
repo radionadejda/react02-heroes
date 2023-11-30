@@ -1,4 +1,4 @@
-import './_Rating.scss';
+import './Rating.scss';
 
 export function Rating() {
     return (
